@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #f1f1f1;
+}
+
+.container {
+  background: #2c2c2c;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+#wordBox {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background-color: #3c3c3c;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#feedback {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#correctAnswer {
+  color: #ff4c4c;
+  margin-top: 5px;
+}
+
+#score {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #f1f1f1;
+}
+
+/* Стили вкладок */
+#tabsBar {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+
+#tabsBar button {
+  padding: 6px 12px;
+  font-size: 16px;
+  background-color: #1e1e1e; /* фон как у контейнера, более тёмный */
+  color: #ffcc00; /* яркий текст */
+  border: 1px solid #444;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#tabsBar button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+#tabsBar button.active {
+  background-color: #ffcc00;
+  color: #1e1e1e;
+  font-weight: bold;
+}
